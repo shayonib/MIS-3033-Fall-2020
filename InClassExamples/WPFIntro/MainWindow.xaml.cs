@@ -23,6 +23,22 @@ namespace WPFIntro
         public MainWindow()
         {
             InitializeComponent();
+
+            txtFavColor.Text = string.Empty;
+            txtName.Clear();
+            btnClickMe.IsEnabled = false;
+         
+        }
+
+        private void btnClickMe_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("You clicked me!");
+        }
+
+        private void txtFavColor_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            MessageBox.Show("You changed me.");
+
         }
     }
 }

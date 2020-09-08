@@ -7,6 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFD2A3EA" Offset="0.852"/>
+                <GradientStop Color="#FF81B0B7" Offset="0.549"/>
+                <GradientStop Color="#FF94C2A0" Offset="0.335"/>
+                <GradientStop Color="#FFC5E4CD" Offset="0.135"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox x:Name="txtFavColor" HorizontalAlignment="Left" Margin="239,160,0,0" Text="Text Box
+                 " TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Height="28" TextChanged="txtFavColor_TextChanged"/>
+        <Button x:Name="btnClickMe" Content="Click Me" HorizontalAlignment="Left" Margin="74,259,0,0" VerticalAlignment="Top" Height="42" Width="141" Click="btnClickMe_Click"/>
+        <Label x:Name="lblFavColor" Content="Enter your favorite color:" HorizontalAlignment="Left" Margin="74,160,0,0" VerticalAlignment="Top" Height="28" Width="141"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="239,0,0,0" Text="Text Box                  " TextWrapping="Wrap" VerticalAlignment="Center" Width="141" Height="28"/>
+        <Label x:Name="lblName" Content="Enter your name: " HorizontalAlignment="Left" Margin="74,0,0,0" VerticalAlignment="Center" Height="28" Width="141"/>
     </Grid>
 </Window>
