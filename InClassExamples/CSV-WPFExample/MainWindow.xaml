@@ -1,0 +1,17 @@
+﻿<Window x:Class="CSV_WPFExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSV_WPFExample"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnProcessFile" Content="Process File" HorizontalAlignment="Left" Margin="298,137,0,0" VerticalAlignment="Top" Width="219" Height="66" IsEnabled="False" Click="btnProcessFile_Click"/>
+        <Button x:Name="btnValidate" Content="Validate" HorizontalAlignment="Left" Margin="575,68,0,0" VerticalAlignment="Top" Width="75" Click="btnValidate_Click" Height="39"/>
+        <TextBox x:Name="txtFilePath" HorizontalAlignment="Left" Height="39" Margin="169,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="371"/>
+        <ListBox x:Name="lstFile" HorizontalAlignment="Left" Height="152" Margin="81,242,0,0" VerticalAlignment="Top" Width="650"/>
+        <Label x:Name="lblFilePath" Content="Enter your file path:" HorizontalAlignment="Left" Margin="112,90,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
